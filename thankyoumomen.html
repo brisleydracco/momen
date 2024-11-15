@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Fundo branco */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logomarca */
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 150px; /* Ajusta o tamanho máximo da logomarca */
+            width: 100%;
+            height: auto;
+        }
+
+        /* Seção de Agradecimento */
+        .thank-you {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thank-you h1 {
+            color: #d63384;
+            font-size: 2em;
+        }
+
+        .thank-you p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Estilo da imagem */
+        .thank-you img {
+            width: 100%;
+            max-width: 300px; /* Limita o tamanho máximo da imagem */
+            height: auto;
+            border-radius: 15px; /* Bordas arredondadas */
+            margin: 20px auto; /* Centraliza a imagem verticalmente */
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+        }
+
+        /* Barra de Progresso */
+        .progress-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .progress {
+            width: 0%; /* Inicia a barra em 0% para animação */
+            height: 100%;
+            background: linear-gradient(to right, #4caf50, #8bc34a); /* Gradiente de verde */
+            transition: width 0.2s ease; /* Transição mais suave */
+        }
+
+        .progress-text {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Seção de Impacto das Doações */
+        .donation-impact {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #ffe4e1, #fff5f5);
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .donation-impact h2 {
+            color: #d63384;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .impact-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .impact-item {
+            max-width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .impact-item h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .impact-item p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Botão Donate Now */
+        .gfm-donate-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #252525;
+            text-decoration: none;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #fdb933, #f99a32); /* Gradiente de laranja */
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .gfm-donate-button:hover {
+            background: linear-gradient(180deg, #f99a32, #fdb933); /* Inverte o gradiente ao passar o mouse */
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .footer img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-text {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .footer-progress {
+            margin-top: 20px;
+        }
+
+        /* Estilo para os botões da Google Play e App Store */
+        .app-links img {
+            width: 140px;
+            height: auto;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logomarca GoFundMe -->
+        <div class="logo">
+            <img src="https://i.postimg.cc/5tPt64VV/Go-Fund-Me-Logo.png" alt="GoFundMe Logo">
+        </div>
+
+        <!-- Seção de Agradecimento -->
+        <div class="thank-you">
+            <h1>Thank You for Helping Momen and his Family!</h1>
+            <p>We're beyond words to describe all the love and support that our Family is receiving from all over the World, thank you and I hope that God bless your soul ❤️</p>
+            <img src="https://i.postimg.cc/sfkcKGz0/image.png" alt="Fundraiser Image">
+        <h4>Thank you again, we're almost there because of you!</h4>
+        </div>
+            <!-- Barra de Progresso no Rodapé -->
+            <div class="footer-progress">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="footer-progress-bar" bis_skin_checked="1" style="width: 0.5%;"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text">$0 raised / $100,000 goal · 0 donations</div>
+                    </div>
+                    <a
+  class="gfm-donate-button hrt-primary-button hrt-primary-button--full hrt-primary-button--large hrt-primary-button--default hrt-base-button"
+  href="#"
+  onclick="window.close(); return false;"
+>
+  Exit
+</a>
+
+
+                </div>
+            </div>
+        <!-- Seção de Impacto das Doações -->
+        <div class="donation-impact">
+            <h2>Where Your Donations Go</h2>
+            <div class="impact-items">
+                <div class="impact-item">
+                    <img src="https://i.postimg.cc/QtXMMFPS/Design-sem-nome-25-removebg-preview.png" alt="Shelter Icon" class="icon">
+                    <h3>Shelter and Needs</h3>
+                    <p>Your donations provide safe shelter and basic needs, ensuring a comfortable and secure environment.</p>
+                </div>
+                <div class="impact-item">
+                    <img src="https://i.postimg.cc/gj1d3jMC/Design-sem-nome-26-removebg-preview.png" alt="Food Icon" class="icon">
+                    <h3>Food and Hygiene</h3>
+                    <p>We provide nutritious food and essential hygiene supplies to maintain health and well-being.</p>
+                </div>
+                <div class="impact-item">
+                    <img src="https://i.postimg.cc/Qt4jx0cx/Design-sem-nome-27-removebg-preview.png" alt="Transport Icon" class="icon">
+                    <h3>School Transportation</h3>
+                    <p>Your support enables reliable transportation to educational facilities, empowering future success.</p>
+                </div>
+                <div class="impact-item">
+                    <img src="https://i.postimg.cc/KYbG9KZF/Design-sem-nome-28-removebg-preview.png" alt="Adoption Icon" class="icon">
+                    <h3>Adoption Help</h3>
+                    <p>We facilitate adoption services, helping individuals find loving homes and fostering lifelong connections.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+        <a href="https://www.gofundme.com/">Check out other trending donations</a>
+        </div>
+        
+        <div class="rights">
+            <p>© 2010-2024 
+            <p>GoFundme Terms</p>
+            <p>· Privacy Policy · Legal Information</p>
+            <div class="app-links">
+                <img src="https://i.postimg.cc/Jhhpbq9k/img-play-store-pt.png" alt="Google Play">
+                <img src="https://i.postimg.cc/9QC8fVb1/img-app-store-pt-v2.png" alt="App Store">
+            </div>
+        </div>
+    </div>
+</div>
+              
+
+    <!-- JavaScript para animação -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const progressBar = document.getElementById("progress-bar");
+            const footerProgressBar = document.getElementById("footer-progress-bar");
+            const progressText = document.getElementById("progress-text");
+            const footerProgressText = footerProgressBar.nextElementSibling;
+
+            // Valores de destino
+            const targetAmountTop = 96074;
+            const targetDonationsTop = 19542;
+            const goalTop = 100000;
+
+            const targetAmountFooter = 3885;
+            const goalFooter = 4000;
+
+            // Função para animar a barra de progresso com incremento uniforme
+            function animateProgressBar(element, targetAmount, goal, intervalTime = 20) {
+                const increment = (targetAmount / goal) * 100 / (1000 / intervalTime); // Ajusta o incremento para alcançar a porcentagem total
+                let percentage = 0;
+
+                const interval = setInterval(() => {
+                    percentage += increment;
+                    element.style.width = Math.min(percentage, (targetAmount / goal) * 100) + "%";
+
+                    if (percentage >= (targetAmount / goal) * 100) clearInterval(interval);
+                }, intervalTime);
+            }
+
+            // Função para animar a contagem dos números
+            function animateCount(textElement, targetAmount, goal, targetDonations = 0) {
+                let currentAmount = 0;
+                let currentDonations = 0;
+
+                const amountInterval = setInterval(() => {
+                    currentAmount += Math.ceil(targetAmount / 100); // Ajuste a velocidade
+                    currentDonations += Math.ceil(targetDonations / 100); // Ajuste a velocidade
+                    
+                    // Atualiza o texto da contagem
+                    textElement.textContent = `$${currentAmount.toLocaleString()} raised / $${goal.toLocaleString()} goal` + (targetDonations ? ` · ${currentDonations.toLocaleString()} donations` : "");
+
+                    // Condição de parada
+                    if (currentAmount >= targetAmount) {
+                        currentAmount = targetAmount;
+                        currentDonations = targetDonations;
+                        clearInterval(amountInterval);
+                    }
+                }, 20);
+            }
+
+            // Iniciar animação para a barra e o contador do topo com incremento uniforme
+            animateProgressBar(progressBar, targetAmountTop, goalTop);
+            animateCount(progressText, targetAmountTop, goalTop, targetDonationsTop);
+
+            // Iniciar animação para a barra e o contador do rodapé
+            animateProgressBar(footerProgressBar, targetAmountFooter, goalFooter);
+            animateCount(footerProgressText, targetAmountFooter, goalFooter);
+        });
+    </script>
+</body>
+</html>
